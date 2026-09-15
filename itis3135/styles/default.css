@@ -1,5 +1,7 @@
+
 body {
-    background-color: #d9d9d9;
+    /* Dark background supports my color theme. */
+    background-color: #111111;
     color: #111111;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,36 +9,49 @@ body {
 }
 
 header {
-    background-color: #111111;
-    color: white;
+    /* Maroon and gold are used for my theme. */
+    background-color: #7a0019;
+    color: #d4af37;
     text-align: center;
     padding: 20px;
 }
 
-header h1 {
+h1 {
     margin: 0 0 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7a0019;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    margin: 10px 0;
 }
 
 nav a {
-    color: white;
+    /* Light cream text contrasts against dark maroon header. */
+    color: #f7f3e8;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #c1121f;
+    color: #d4af37;
 }
 
 main {
-    width: 80%;
     max-width: 900px;
     margin: 30px auto;
-    background-color: white;
+    /* Light cream background keeps the main content readable. */
+    background-color: #f7f3e8;
     padding: 25px;
     border-radius: 8px;
 }
 
 h2, h3 {
-    color: #c1121f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7a0019;
 }
 
 figure {
@@ -52,6 +67,7 @@ figure img {
 
 figcaption {
     margin-top: 8px;
+    font-style: italic;
 }
 
 li {
@@ -60,18 +76,40 @@ li {
 }
 
 footer {
-    background-color: #111111;
-    color: white;
+    /* Light cream text contrasts against dark maroon footer. */
+    background-color: #7a0019;
+    color: #f7f3e8;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
 
 footer a {
-    color: white;
+    color: #f7f3e8;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #c1121f;
+    color: #d4af37;
+}
+
+/* Responsive layout for smaller screen. */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    figure img {
+        max-width: 100%;
+    }
 }
