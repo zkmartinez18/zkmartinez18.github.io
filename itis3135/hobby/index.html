@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cybersecurity: Protecting the Digital World ✦ What Is Cybersecurity?</title>
+
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #101820;
+                color: #DCE6E9;
+                font-family: Arial, Tahoma, sans-serif;
+                margin: 0 auto;
+                max-width: 1400px;
+                line-height: 1.6;
+            }
+            header {
+                background-color: #20343D;
+                padding: 25px;
+                text-align: center;
+                border-bottom: 3px solid #00C896;
+            }
+            nav {
+                margin-top: 20px;
+                line-height: 2;
+            }
+            nav a {
+                color: #DCE6E9;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 12px;
+                border-radius: 5px;
+            }
+            nav a:visited {
+                color: #DCE6E9;
+            }
+            nav a.active:visited {
+                color: #101820;
+            }
+            nav a:hover,
+            nav a:focus-visible {
+                background-color: #00C896;
+                color: #101820;
+            }
+            nav a.active {
+                background-color: #00C896;
+                color: #101820;
+            }
+            h1, h2, h3 {
+                color: #00C896;
+                font-family: Georgia, serif;
+            }
+            main {
+                max-width: 1000px;
+                margin: 30px auto;
+                padding: 25px;
+                background-color: #20343D;
+                border-radius: 10px;
+            }
+            section {
+                padding: 20px;
+                display: none;
+            }
+            section.active-section {
+                display: block;
+            }
+            footer {
+                background-color: #20343D;
+                padding: 20px;
+                text-align: center;
+                border-top: 3px solid #00C896;
+            }
+            footer a,
+            footer a:visited {
+                color: #00C896;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            footer a:hover,
+            footer a:focus-visible {
+                text-decoration: underline;
+            }
+            figure {
+                margin: 25px auto;
+                text-align: center;
+            }
+            figure img {
+                max-width: 100%;
+                height: auto;
+                border: 2px solid #00C896;
+                border-radius: 8px;
+            }
+            figcaption {
+                margin-top: 10px;
+                color: #DCE6E9;
+            }
+            figure p {
+                color: #B8C9CE;
+                font-size: 0.9rem;
+            }
+            .who-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
+                margin: 25px 0;
+            }
+            .who-card {
+                background-color: #101820;
+                border: 1px solid #00C896;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            .who-skills {
+                background-color: #101820;
+                border-left: 4px solid #00C896;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+            .when-intro {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .when-intro figure {
+                margin: 0;
+            }
+            .when-description {
+                background-color: #101820;
+                padding: 20px;
+                border-left: 4px solid #00C896;
+                border-radius: 8px;
+            }
+            .when-examples {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 15px;
+            }
+            .when-card {
+                background-color: #101820;
+                padding: 20px;
+                border: 1px solid #00C896;
+                border-radius: 8px;
+            }
+            .where-intro {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .where-description {
+                background-color: #101820;
+                padding: 20px;
+                border-left: 4px solid #00C896;
+                border-radius: 8px;
+            }
+            .where-intro figure {
+                margin: 0;
+            }
+            .where-examples {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 15px;
+            }
+            .where-card {
+                background-color: #101820;
+                padding: 20px;
+                border: 1px solid #00C896;
+                border-radius: 8px;
+            }
+            .how-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
+                margin: 25px 0;
+            }
+            .how-card {
+                background-color: #101820;
+                border: 1px solid #00C896;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            .how-figure {
+                max-width: 750px;
+                margin: 35px auto;
+            }
+            .why-figure {
+                max-width: 850px;
+                margin: 25px auto 35px;
+            }
+            .why-intro {
+                background-color: #101820;
+                border-left: 4px solid #00C896;
+                border-radius: 8px;
+                padding: 25px;
+                margin-bottom: 25px;
+            }
+            .why-grid {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 20px;
+            }
+            .why-card {
+                background-color: #101820;
+                border: 1px solid #00C896;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            .prompts-grid {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 20px;
+                margin: 25px 0;
+            }
+            .prompt-card {
+                background-color: #101820;
+                border: 1px solid #00C896;
+                border-radius: 10px;
+                padding: 20px;
+                min-width: 0;
+                text-align: center;
+            }
+            .prompts-figure {
+                max-width: 650px;
+                margin: 30px auto;
+            }
+            @media (max-width: 600px) {
+                header {
+                    padding: 15px;
+                }
+                main {
+                    margin: 15px;
+                    padding: 15px;
+                }
+                section {
+                    padding: 10px;
+                }
+                nav a {
+                    display: inline-block;
+                    padding: 6px 8px;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                }                
+                .when-intro,
+                .when-examples {
+                    grid-template-columns: 1fr;
+                }
+                .where-intro,
+                .where-examples {
+                    grid-template-columns: 1fr;
+                }
+                .how-grid {
+                    grid-template-columns: 1fr;
+                }
+                .why-grid {
+                    grid-template-columns: 1fr;
+                }
+                .prompts-grid {
+                    grid-template-columns: 1fr;
+                }
+                .who-grid {
+                    grid-template-columns: 1fr;
+                }                
+            }            
+        </style>
+
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Cybersecurity: Protecting the Digital World</h1>
+
+            <p><em>Securing Today, Protecting Tomorrow.</em></p>
+
+            <nav aria-label="Hobby navigation">
+                <a href="#what">What</a> &#x2b21;
+                <a href="#who">Who</a> &#x2b21;
+                <a href="#when">When</a> &#x2b21;
+                <a href="#where">Where</a> &#x2b21;
+                <a href="#how">How</a> &#x2b21;
+                <a href="#why">Why</a> &#x2b21;
+                <a href="#ai-prompts">AI Prompts</a>
+            </nav>
+        </header>
+
+        <!-- Div elements are used to group related content into
+             responsive grids and styled containers. -->
+        <!-- Classes are used to apply consistent CSS styling
+              and control which section is currently visible.
+              IDs identify each section so the navigation links
+              and JavaScript can switch between sections. -->
+        <main>
+            <section id="what" class="active-section">
+                <h2>What Is Cybersecurity?</h2>
+                <p>
+                    Welcome to my cybersecurity hobby website!
+                    Cybersecurity is the practice of protecting
+                    computers, networks, and digital information
+                    from unauthorized access, attacks, and damage.
+                </p>
+
+                <h3>The CIA Triad</h3>
+
+                <p>
+                    One of the foundations of cybersecurity is the
+                    CIA Triad, which stands for Confidentiality,
+                    Integrity, and Availability.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Confidentiality:</strong>
+                        Ensuring that sensitive information is only
+                        accessible to authorized individuals.
+                    </li>
+                    <li>
+                        <strong>Integrity:</strong>
+                        Protecting information from unauthorized
+                        changes or modifications.
+                    </li>
+                    <li>
+                        <strong>Availability:</strong>
+                        Ensuring that systems and information remain
+                        accessible when needed.
+                    </li>
+                </ul>
+
+                <h3>Cybersecurity in Everyday Life</h3>
+
+                <p>
+                    Cybersecurity plays an important role in everyday
+                    activities such as online banking, shopping,
+                    communicating, and protecting personal accounts.
+                    Understanding cybersecurity helps people recognize
+                    potential threats and develop safer online habits.
+                </p>
+
+                <figure>
+                    <img src="images/cybersecurity-home.webp"
+                         alt="Glowing digital shield representing cybersecurity and network protection"
+                         width="700">
+
+                    <figcaption>
+                        Figure 1: Cybersecurity protects digital
+                        information and connected networks.
+                    </figcaption>
+
+                    <p>
+                        <em>
+                            AI image prompt: Create a realistic cybersecurity
+                            image featuring a glowing emerald green digital
+                            shield surrounded by network connections against
+                            a dark navy background.
+                        </em>
+                    </p>
+                </figure>
+            </section>
+
+            <section id="who">
+                <h2>Who Is Interested in Cybersecurity?</h2>
+
+                <div class="who-grid">
+                    <article class="who-card">
+                <h3>My Interest in Cybersecurity</h3>
+
+                <p>
+                    My interest in cybersecurity developed from seeing
+                    people become victims of cyberattacks and witnessing
+                    the impact those experiences had on their lives.
+                    Seeing how cyberattacks can compromise personal
+                    information, disrupt daily activities, and cause
+                    financial and emotional stress made me realize
+                    how important cybersecurity truly is. These
+                    experiences motivated me to learn more about
+                    how cyber threats work, how they can be prevented,
+                    and how I can help protect others from becoming
+                    victims. Over time, this interest has grown into
+                    something I want to pursue as a career.
+                </p>
+                    </article>
+
+                <article class="who-card">
+                <h3>Cybersecurity Professionals</h3>
+
+                <p>
+                    Cybersecurity professionals help protect
+                    organizations and individuals from digital
+                    threats. Security analysts monitor systems for
+                    suspicious activity, network security engineers
+                    help secure computer networks, and incident
+                    responders investigate security incidents
+                    and help organizations recover from attacks.
+                </p>
+                </article>
+            </div>
+
+                <div class="who-skills">
+                <h3>Important Cybersecurity Skills</h3>
+
+                <p>
+                    Cybersecurity requires a combination of technical
+                    knowledge, problem-solving abilities, and
+                    continuous learning. Professionals must understand
+                    how computer systems operate and how to identify
+                    potential security weaknesses.
+                </p>
+
+                <ul>
+                    <li>Computer networking and network security</li>
+                    <li>Linux and operating system fundamentals</li>
+                    <li>Programming and scripting</li>
+                    <li>Security monitoring and threat detection</li>
+                    <li>Critical thinking and problem-solving</li>
+                </ul>
+            </div>
+
+                <figure>
+                    <img src="images/cybersecurity-analyst.webp"
+                         alt="Cybersecurity analyst monitoring network security alerts on multiple computer screens"
+                         width="700">
+
+                    <figcaption>
+                        Figure 2: Cybersecurity professionals monitor
+                        networks and respond to potential security threats.
+                    </figcaption>
+
+                    <p>
+                        <em>
+                            AI image prompt: Create a realistic image of a
+                            cybersecurity analyst monitoring network security
+                            alerts on multiple computer screens in a modern
+                            security operations center, using dark navy
+                            and emerald green colors.
+                        </em>
+                    </p>
+                </figure>
+            </section>
+
+            <section id="when">
+                <h2>When Is Cybersecurity Important?</h2>
+                
+                <div class="when-intro">
+                    <figure>
+                        <img src="images/cybersecurity-everyday.webp"
+                             alt="Digital devices protected by cybersecurity"
+                             width="700">
+
+                        <figcaption>
+                            Figure 3: Cybersecurity protects our
+                            everyday digital activities.
+                        </figcaption>
+
+                        <p>
+                            <em>
+                                AI image prompt: Create a realistic
+                                illustration of everyday cybersecurity,
+                                featuring a laptop, smartphone, and
+                                digital security symbols with dark navy
+                                and emerald green lighting.
+                            </em>
+                        </p>
+                    </figure>
+
+                    <div class="when-description">
+                        <h3>Cybersecurity Is Important Every Day</h3>
+                        <p>
+                            Cybersecurity is important whenever we use
+                            technology to access personal information,
+                            communicate, or complete transactions.
+                            Cyber threats can occur at any time, making
+                            it important to develop safe online habits
+                            and remain aware of potential risks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="when-examples">
+                    <article class="when-card">
+                        <h3>Online Banking</h3>
+                        <p>
+                            Cybersecurity is especially important when
+                            accessing financial accounts or making
+                            online payments. Strong passwords,
+                            multifactor authentication, and secure
+                            connections help protect sensitive
+                            financial information.
+                        </p>
+                    </article>
+
+                    <article class="when-card">
+                        <h3>Online Shopping</h3>
+                        <p>
+                            When shopping online, cybersecurity helps
+                            protect payment information and personal
+                            details. Recognizing suspicious websites,
+                            avoiding phishing scams, and using trusted
+                            payment methods can reduce security risks.
+                        </p>
+                    </article>
+
+                    <article class="when-card">
+                        <h3>Using Social Media</h3>
+                        <p>
+                            Social media accounts can be targeted
+                            through phishing, impersonation, and
+                            account theft. Privacy settings, strong
+                            passwords, and caution when opening
+                            unfamiliar links help keep accounts secure.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="where">
+                <h2>Where Is Cybersecurity Used?</h2>
+                
+                <div class="where-intro">
+                    <div class="where-description">
+                        <h3>Cybersecurity Is Everywhere</h3>
+                        <p>
+                            Cybersecurity is used in nearly every
+                            environment that depends on technology.
+                            From personal devices at home to large
+                            organizations and government systems,
+                            protecting digital information is essential.
+                            As more services become connected to the
+                            internet, cybersecurity plays an increasingly
+                            important role in keeping systems and
+                            sensitive information secure.
+                        </p>
+                    </div>
+
+                    <figure>
+                        <img src="images/cybersecurity-locations.webp"
+                             alt="Connected city with buildings and digital security networks"
+                             width="700">
+
+                        <figcaption>
+                            Figure 4: Cybersecurity protects
+                            connected systems across many industries.
+                        </figcaption>
+
+                        <p>
+                            <em>
+                                AI image prompt: Create a cinematic
+                                futuristic city at night with glowing
+                                emerald green network connections.
+                            </em>
+                        </p>
+                    </figure>
+                </div>
+
+                <div class="where-examples">
+                    <article class="where-card">
+                        <h3>Homes and Personal Devices</h3>
+                        <p>
+                            Cybersecurity protects home networks,
+                            smartphones, computers, and smart devices.
+                            Secure Wi-Fi connections, software updates,
+                            and strong passwords help prevent
+                            unauthorized access to personal information.
+                        </p>
+                    </article>
+
+                    <article class="where-card">
+                        <h3>Businesses and Organizations</h3>
+                        <p>
+                            Businesses rely on cybersecurity to
+                            protect customer information, financial
+                            records, and internal systems. Security
+                            measures such as access controls,
+                            encryption, and network monitoring help
+                            organizations reduce cyber risks.
+                        </p>
+                    </article>
+
+                    <article class="where-card">
+                        <h3>Healthcare and Government</h3>
+                        <p>
+                            Hospitals and government agencies use
+                            cybersecurity to protect sensitive records
+                            and essential services. Strong security
+                            practices help prevent data breaches
+                            and reduce disruptions to critical systems.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="how">
+                <h2>How Does Cybersecurity Work?</h2>
+                
+                <p>
+                    Cybersecurity works by combining technology,
+                    security practices, and user awareness to
+                    protect systems and information from threats.
+                    Several methods work together to prevent
+                    attacks, detect suspicious activity, and
+                    recover from security incidents.
+                </p>
+
+                <div class="how-grid">
+                    <article class="how-card">
+                        <h3>Strong Passwords and MFA</h3>
+                        <p>
+                            Strong, unique passwords help prevent
+                            unauthorized access to accounts.
+                            Multifactor authentication (MFA) adds
+                            another layer of protection by requiring
+                            an additional verification step.
+                        </p>
+                    </article>
+
+                    <article class="how-card">
+                        <h3>Software Updates</h3>
+                        <p>
+                            Software updates fix security
+                            vulnerabilities that attackers could
+                            exploit. Keeping operating systems,
+                            applications, and devices updated
+                            reduces the risk of cyberattacks.
+                        </p>
+                    </article>
+                </div>
+
+                <figure class="how-figure">
+                    <img src="images/cybersecurity-protection.webp" 
+                         alt="Cybersecurity protection layers surrounding a computer"
+                         width="800">
+
+                    <figcaption>
+                        Figure 5: Multiple layers of security
+                        work together to protect digital systems.
+                    </figcaption>
+
+                    <p>
+                        <em>
+                            AI image prompt: Create a cinematic
+                            cybersecurity illustration showing
+                            a computer protected by multiple
+                            glowing emerald green digital shields,
+                            representing layered security defenses
+                            against cyber threats.
+                        </em>
+                    </p>
+                </figure>
+                
+                <div class="how-grid">
+                    <article class="how-card">
+                        <h3>Recognizing Phishing Attacks</h3>
+                        <p>
+                            Phishing attacks attempt to trick
+                            people into revealing passwords,
+                            financial information, or other
+                            sensitive data. Checking senders,
+                            links, and suspicious messages
+                            helps users avoid these scams.
+                        </p>
+                    </article>
+
+                    <article class="how-card">
+                        <h3>Data Backups and Recovery</h3>
+                        <p>
+                            Regular backups help protect
+                            important files from data loss,
+                            ransomware, and hardware failures.
+                            Having a recovery plan allows
+                            individuals and organizations
+                            to restore information after
+                            a security incident.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="why">
+                <h2>Why Is Cybersecurity Important?</h2>
+                
+                <figure class="why-figure">
+                    <img src="images/cybersecurity-importance.webp"
+                         alt="Digital world protected by a glowing cybersecurity shield"
+                         width="900">
+
+                    <figcaption>
+                        Figure 6: Cybersecurity helps protect
+                        our increasingly connected digital world.
+                    </figcaption>
+
+                    <p>
+                        <em>
+                            AI image prompt: Create a cinematic
+                            cybersecurity illustration showing
+                            the digital world protected by a
+                            glowing emerald green shield,
+                            surrounded by networks and data
+                            connections against a dark navy
+                            background.
+                        </em>
+                    </p>
+                </figure>
+
+                <div class="why-intro">
+                    <h3>Protecting Our Digital Future</h3>
+                    <p>
+                        Cybersecurity is important because people,
+                        businesses, and governments increasingly
+                        depend on technology in their daily lives.
+                        Cyberattacks can expose private information,
+                        cause financial losses, and interrupt
+                        essential services. Strong cybersecurity
+                        practices help reduce these risks and
+                        create a safer digital environment.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+                    <article class="why-card">
+                        <h3>Protecting Personal Information</h3>
+                        <p>
+                            Cybersecurity helps protect sensitive
+                            information such as passwords, financial
+                            records, and personal identification.
+                            Preventing unauthorized access reduces
+                            the risk of identity theft and fraud.
+                        </p>
+                    </article>
+
+                    <article class="why-card">
+                        <h3>Preventing Financial Loss</h3>
+                        <p>
+                            Cyberattacks can lead to stolen funds,
+                            ransomware payments, and expensive
+                            recovery efforts. Cybersecurity measures
+                            help individuals and organizations
+                            reduce the financial impact of attacks.
+                        </p>
+                    </article>
+
+                    <article class="why-card">
+                        <h3>Protecting Critical Infrastructure</h3>
+                        <p>
+                            Hospitals, power grids, transportation
+                            systems, and government services rely
+                            on secure technology. Cybersecurity
+                            helps protect these systems from attacks
+                            that could disrupt essential operations.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="ai-prompts">
+                <h2>AI Prompts Used</h2>
+
+                <p>
+                    AI assisted with website layouts, images,
+                    and reviewing assignment requirements.
+                </p>
+
+                <div class="prompts-grid">
+                    <article class="prompt-card">
+                        <h3>Website Design</h3>
+                        <p>
+                            Help create a responsive
+                            hobby website.
+                        </p>
+                    </article>
+
+                    <article class="prompt-card">
+                        <h3>Cybersecurity Content</h3>
+                        <p>
+                            Review my cybersecurity
+                            information and concepts for
+                            accuracy and correct definitions.
+                        </p>
+                    </article>
+
+                    <article class="prompt-card">
+                        <h3>Image Generation</h3>
+                        <p>
+                            Create cybersecurity images
+                            with a dark green theme.
+                        </p>
+                    </article>                    
+                </div>
+                <figure class="prompts-figure">
+                    <img src="images/ai-technology.webp"
+                         alt="Glowing artificial intelligence digital brain"
+                         width="700">
+
+                    <figcaption>
+                        Figure 7: Artificial intelligence
+                        assists with digital technology.
+                    </figcaption>
+
+                    <p>
+                        <em>
+                            AI image prompt: Create a futuristic
+                            illustration of an artificial intelligence
+                            digital brain glowing with emerald green
+                            circuits and network connections against
+                            a dark navy background.
+                        </em>
+                    </p>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+            <a href="../martinezdigitaldesigns.com/index.html">Martinez Digital Designs</a>
+            </p>
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    HTML Validation
+                </a>
+                |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    CSS Validation
+                </a>
+                |
+                <a href="https://wave.webaim.org/">
+                    Accessibility Validation
+                </a>
+            </p>
+        </footer>
+
+        <script>
+            const navLinks = document.querySelectorAll("nav a");
+            const sections = document.querySelectorAll("main section");
+
+            function showSelection(sectionId) {
+                sections.forEach((section) => {
+                    section.classList.toggle(
+                        "active-section",
+                        section.id === sectionId
+                    );
+                });
+
+                navLinks.forEach((link) => {
+                    const isActive = link.getAttribute("href") === "#" + sectionId;
+                    link.classList.toggle("active", isActive);
+                    if(isActive) {
+                        link.setAttribute("aria-current", "page");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                });
+
+            const activeSection = document.getElementById(sectionId);
+            if(activeSection) {
+                const heading = activeSection.querySelector("h2");
+                if(heading) {
+                    document.title = 
+                    "Cybersecurity: Protecting the Digital World ✦ " +
+                    heading.textContent.trim();
+                }
+            }
+            }
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    const sectionId = link.getAttribute("href").substring(1);
+                    showSelection(sectionId);
+                });
+            });
+
+            const initialSection = window.location.hash.substring(1);
+            const validSection = document.getElementById(initialSection);
+            if(validSection && validSection.matches("main section")) {
+                showSelection(initialSection);
+            } else {
+                showSelection("what");
+            }
+
+            window.addEventListener("hashchange", () => {
+                const sectionId = window.location.hash.substring(1);
+                const target = document.getElementById(sectionId);
+
+                if(target && target.matches("main section")) {
+                    showSelection(sectionId);
+                }
+            });
+        </script>
+    </body>
+</html>
