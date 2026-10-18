@@ -66,7 +66,7 @@
                 padding: 20px;
                 display: none;
             }
-            section.active-section {
+            .active-section {
                 display: block;
             }
             footer {
@@ -105,7 +105,7 @@
             }
             .who-grid {
                 display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
                 margin: 25px 0;
             }
@@ -247,7 +247,7 @@
                     display: inline-block;
                     padding: 6px 8px;
                 }
-                h1 {
+                .mobile-heading {
                     font-size: 1.6rem;
                 }                
                 .when-intro,
@@ -264,12 +264,15 @@
                 .why-grid {
                     grid-template-columns: 1fr;
                 }
+
                 .prompts-grid {
                     grid-template-columns: 1fr;
                 }
+
                 .who-grid {
                     grid-template-columns: 1fr;
-                }                
+                }
+
             }            
         </style>
 
@@ -279,7 +282,7 @@
     </head>
     <body>
         <header>
-            <h1>Cybersecurity: Protecting the Digital World</h1>
+            <h1 class="mobile-heading">Cybersecurity: Protecting the Digital World</h1>
 
             <p><em>Securing Today, Protecting Tomorrow.</em></p>
 
@@ -351,11 +354,6 @@
                          alt="Glowing digital shield representing cybersecurity and network protection"
                          width="700">
 
-                    <figcaption>
-                        Figure 1: Cybersecurity protects digital
-                        information and connected networks.
-                    </figcaption>
-
                     <p>
                         <em>
                             AI image prompt: Create a realistic cybersecurity
@@ -364,6 +362,11 @@
                             a dark navy background.
                         </em>
                     </p>
+
+                    <figcaption>
+                        Figure 1: Cybersecurity protects digital
+                        information and connected networks.
+                    </figcaption>                    
                 </figure>
             </section>
 
@@ -430,11 +433,6 @@
                          alt="Cybersecurity analyst monitoring network security alerts on multiple computer screens"
                          width="700">
 
-                    <figcaption>
-                        Figure 2: Cybersecurity professionals monitor
-                        networks and respond to potential security threats.
-                    </figcaption>
-
                     <p>
                         <em>
                             AI image prompt: Create a realistic image of a
@@ -444,6 +442,11 @@
                             and emerald green colors.
                         </em>
                     </p>
+
+                    <figcaption>
+                        Figure 2: Cybersecurity professionals monitor
+                        networks and respond to potential security threats.
+                    </figcaption>                    
                 </figure>
             </section>
 
@@ -456,11 +459,6 @@
                              alt="Digital devices protected by cybersecurity"
                              width="700">
 
-                        <figcaption>
-                            Figure 3: Cybersecurity protects our
-                            everyday digital activities.
-                        </figcaption>
-
                         <p>
                             <em>
                                 AI image prompt: Create a realistic
@@ -470,6 +468,10 @@
                                 and emerald green lighting.
                             </em>
                         </p>
+                        <figcaption>
+                            Figure 3: Cybersecurity protects our
+                            everyday digital activities.
+                        </figcaption>                        
                     </figure>
 
                     <div class="when-description">
@@ -546,11 +548,6 @@
                              alt="Connected city with buildings and digital security networks"
                              width="700">
 
-                        <figcaption>
-                            Figure 4: Cybersecurity protects
-                            connected systems across many industries.
-                        </figcaption>
-
                         <p>
                             <em>
                                 AI image prompt: Create a cinematic
@@ -558,6 +555,10 @@
                                 emerald green network connections.
                             </em>
                         </p>
+                        <figcaption>
+                            Figure 4: Cybersecurity protects
+                            connected systems across many industries.
+                        </figcaption>                        
                     </figure>
                 </div>
 
@@ -639,11 +640,6 @@
                          alt="Cybersecurity protection layers surrounding a computer"
                          width="800">
 
-                    <figcaption>
-                        Figure 5: Multiple layers of security
-                        work together to protect digital systems.
-                    </figcaption>
-
                     <p>
                         <em>
                             AI image prompt: Create a cinematic
@@ -654,6 +650,10 @@
                             against cyber threats.
                         </em>
                     </p>
+                    <figcaption>
+                        Figure 5: Multiple layers of security
+                        work together to protect digital systems.
+                    </figcaption>                    
                 </figure>
                 
                 <div class="how-grid">
@@ -692,11 +692,6 @@
                          alt="Digital world protected by a glowing cybersecurity shield"
                          width="900">
 
-                    <figcaption>
-                        Figure 6: Cybersecurity helps protect
-                        our increasingly connected digital world.
-                    </figcaption>
-
                     <p>
                         <em>
                             AI image prompt: Create a cinematic
@@ -708,6 +703,10 @@
                             background.
                         </em>
                     </p>
+                    <figcaption>
+                        Figure 6: Cybersecurity helps protect
+                        our increasingly connected digital world.
+                    </figcaption>                    
                 </figure>
 
                 <div class="why-intro">
@@ -799,11 +798,6 @@
                          alt="Glowing artificial intelligence digital brain"
                          width="700">
 
-                    <figcaption>
-                        Figure 7: Artificial intelligence
-                        assists with digital technology.
-                    </figcaption>
-
                     <p>
                         <em>
                             AI image prompt: Create a futuristic
@@ -813,6 +807,10 @@
                             a dark navy background.
                         </em>
                     </p>
+                    <figcaption>
+                        Figure 7: Artificial intelligence
+                        assists with digital technology.
+                    </figcaption>                    
                 </figure>
             </section>
         </main>
@@ -851,7 +849,7 @@
                 navLinks.forEach((link) => {
                     const isActive = link.getAttribute("href") === "#" + sectionId;
                     link.classList.toggle("active", isActive);
-                    if(isActive) {
+                    if (isActive) {
                         link.setAttribute("aria-current", "page");
                     } else {
                         link.removeAttribute("aria-current");
@@ -859,9 +857,9 @@
                 });
 
             const activeSection = document.getElementById(sectionId);
-            if(activeSection) {
+            if (activeSection) {
                 const heading = activeSection.querySelector("h2");
-                if(heading) {
+                if (heading) {
                     document.title = 
                     "Cybersecurity: Protecting the Digital World ✦ " +
                     heading.textContent.trim();
@@ -878,7 +876,7 @@
 
             const initialSection = window.location.hash.substring(1);
             const validSection = document.getElementById(initialSection);
-            if(validSection && validSection.matches("main section")) {
+            if (validSection && validSection.matches("main section")) {
                 showSelection(initialSection);
             } else {
                 showSelection("what");
@@ -888,7 +886,7 @@
                 const sectionId = window.location.hash.substring(1);
                 const target = document.getElementById(sectionId);
 
-                if(target && target.matches("main section")) {
+                if (target && target.matches("main section")) {
                     showSelection(sectionId);
                 }
             });
