@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Product Landing</title>
+        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Martinez Cyber Shield</title>
 
         <link rel="stylesheet" href="styles/default.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
@@ -16,11 +16,120 @@
         <div data-include="components/header.html"></div>
 
         <main>
-            <h2>Product Landing</h2>
+            <h2>Martinez Cyber Shield</h2>
+
+            <!-- Product image class controls image size and alignment. -->
+             <img src="images/cybersecurity-shield.png"
+                  alt="Red and gold cybersecurity shield with a padlock"
+                  class="product-image">
 
             <p>
-                This page will contain my Product Landing page.
+                Welcome to Martinez Cyber Defense! Martinez Cyber Shield
+                is an all-in-one security package designed to help
+                protect your devices, personal information, and
+                online accounts.
             </p>
+
+            <!-- Product navigation uses IDs for internal page links.
+                 The nav-link class identifies the links for FCC tests.-->
+
+            <nav id="nav-bar" aria-label="Product Navigation">
+                <a class="nav-link" href="#features">Features</a> |
+                <a class="nav-link" href="#pricing">Pricing</a> |
+                <a class="nav-link" href="#demo">Demo</a> |
+                <a class="nav-link" href="#signup">Sign Up</a>
+            </nav>
+
+            <!-- Sections use IDs for navigation and page organization. -->
+             <section id="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>Firewall protection against unauthorized traffic</li>
+                    <li>Antivirus protection against malicious software</li>
+                    <li>Secure password management</li>
+                    <li>VPN encryption for internet connections</li>
+                    <li>Multi-factor authentication support</li>
+                </ul>
+             </section>
+
+             <section id="pricing">
+                <h3>Pricing Plans</h3>
+
+                <!-- Div groups the pricing cards for Flexbox styling.
+                     Classes identify individual cards and prices. -->
+                <div class="pricing-container">
+                    <article class="pricing-card">
+                        <h4>Basic Production</h4>
+                        <p class="price">$9.99/month</p>
+                        <p>Antivirus and firewall protection.</p>
+                    </article>
+
+                    <article class="pricing-card">
+                        <h4>Advanced Protection</h4>
+                        <p class="price">$19.99/month</p>
+                        <p>
+                            Antivirus, firewall, VPN,
+                            and password manager.
+                        </p>
+                    </article>
+
+                    <article class="pricing-card">
+                        <h4>Ultimate Protection</h4>
+                        <p class="price">$29.99/month</p>
+                        <p>
+                            All security features, including
+                            multi-factor authentication support.
+                        </p>
+                    </article>
+                </div>
+             </section>
+
+             <section id="demo">
+                <h3>Product Demonstration</h3>
+
+                <p>
+                    Learn about cybersecurity and why protecting
+                    your digital information is important.
+                </p>
+
+                <!-- Video embed for the product landing page.
+                     Replace VIDEO_ID with an actual Youtube video ID. -->
+                <iframe id="video"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/sesacY7Xz3c"
+                        title="Cybersecurity Architecture: Networks"
+                        allowfullscreen>
+                </iframe>
+             </section>
+
+             <section id="signup">
+                <h3>Stay Protected</h3>
+
+                <p>
+                    Sign up to receive cybersecurity tips
+                    and product updates.
+                </p>
+
+                <!-- Form IDs support freeCodeCamp certification tests. -->
+
+                <form id="form"
+                      action="https://www.freecodecamp.com/email-submit"
+                      method="post">
+                    
+                    <label for="email">Email Address:</label>
+
+                    <input id="email"
+                           name="email"
+                           type="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <input id="submit"
+                           type="submit"
+                           value="Sign up">
+                    </form>
+             </section>
         </main>
 
         <div data-include="components/footer.html"></div>

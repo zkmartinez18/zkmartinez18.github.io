@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Inventory</title>
+        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Cybersecurity Equipment Inventory</title>
 
         <link rel="stylesheet" href="styles/default.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
@@ -16,11 +16,110 @@
         <div data-include="components/header.html"></div>
 
         <main>
-            <h2>Inventory</h2>
+            <h2 class="inventory-heading">Cybersecurity Equipment Inventory</h2>
+
+            <!-- Cybersecurity shield represents the protection tools in our inventory. -->
+            <img src="images/cybersecurity-shield.png"
+                 alt="Red and gold cybersecurity shield with a padlock"
+                 class="inventory-image">
 
             <p>
-                This page will contain my Inventory page.
+                Welcome to Martinez Cyber Defense! Browse our
+                selection of cybersecurity equipment and software
+                designed to help protect your digital world.
             </p>
+
+            <!-- The inventory table uses classes to style
+                 product availability and ratings. The span elements group
+                 the star ratings so they can be styled with CSS
+                 and given accessible labels for screen readers. -->
+            <table class="inventory-table">
+                <caption>Martinez Cyber Defense Product Inventory</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Availability</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="in-stock">
+                        <th scope="row">Hardware Firewall</th>
+                        <td>Network Security</td>
+                        <td>$149.99</td>
+                        <td>In Stock</td>
+                        <td>
+                            <span class="rating">
+                                4 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr class="in-stock">
+                        <th scope="row">Antivirus Software</th>
+                        <td>Endpoint Security</td>
+                        <td>$49.99</td>
+                        <td>In Stock</td>
+                        <td>
+                            <span class="rating">
+                                5 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr class="low-stock">
+                        <th scope="row">Security Key</th>
+                        <td>Authentication</td>
+                        <td>$39.99</td>
+                        <td>Low Stock</td>
+                        <td>
+                            <span class="rating">
+                                4 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr class="in-stock">
+                        <th scope="row">VPN Subscription</th>
+                        <td>Privacy</td>
+                        <td>$9.99/mo</td>
+                        <td>In Stock</td>
+                        <td>
+                            <span class="rating">
+                                4 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr class="out-of-stock">
+                        <th scope="row">Encrypted USB Drive</th>
+                        <td>Data Protection</td>
+                        <td>$79.99</td>
+                        <td>Out of Stock</td>
+                        <td>
+                            <span class="rating">
+                                5 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr class="in-stock">
+                        <th scope="row">Password Manager</th>
+                        <td>Account Security</td>
+                        <td>$29.99/yr</td>
+                        <td>In Stock</td>
+                        <td>
+                            <span class="rating">
+                                5 out of 5 stars
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
 
         <div data-include="components/footer.html"></div>

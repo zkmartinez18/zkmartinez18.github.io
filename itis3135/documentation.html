@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Instructions</title>
+        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Cybersecurity Fundamentals</title>
 
         <link rel="stylesheet" href="styles/default.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
@@ -16,11 +16,122 @@
         <div data-include="components/header.html"></div>
 
         <main>
-            <h2>Instructions</h2>
+            <h2>Cybersecurity Fundamentals</h2>
+
+            <!-- Reuses the cybersecurity shield image from the survey.
+                 The class controls its size and alignment. -->
+            <img src="images/cybersecurity-shield.png"
+                 alt="Red and gold cybersecurity shield with a padlock"
+                 class="documentation-image">
 
             <p>
-                This page will contain my Instructions page.
+                Welcome to Martinez Cyber Defense! This technical guide
+                introduces important cybersecurity concepts and explains
+                how they help protect computers, networks, and personal data.
             </p>
+
+            <!-- Navigation links point to section IDs so readers
+                 can jump directly to each documentation topic. -->
+            <section class="documentation-nav">
+                <h3>Documentation Topics</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction to Cybersecurity</a></li>
+                    <li><a href="#network-security">Network Security</a></li>
+                    <li><a href="#introduction">Introduction to Cybersecurity</a></li>
+                    <li><a href="#firewalls">Firewalls</a></li>
+                    <li><a href="#encryption">Encryption</a></li>
+                    <li><a href="#authentication">Multi-Factor Authentication</a></li>
+                    <li><a href="#password-security">Password Security</a></li>
+
+                </ul>
+            </section>
+
+            <!-- Each section has a unique ID for internal navigation.
+                 Section headings organize the technical documentation. -->
+
+            <section id="introduction">
+                <h3>Introduction to Cybersecurity</h3>
+                <p>
+                    Cybersecurity is the practice of protecting computers,
+                    networks, and digital information from unauthorized access,
+                    attacks, and damage.
+                </p>
+                <p>
+                    Three important goals of cybersecurity are confidentiality,
+                    integrity, and availability. Together, these from the CIA Triad.
+                </p>
+                <code>Confidentiality + Integrity + Availability</code>
+            </section>
+
+            <section id="network-security">
+                <h3>Network Security</h3>
+                <p>
+                    Network security protects devices and information as they
+                    communicate across a network. It uses tools and policies
+                    to reduce unauthorized access and cyberattacks.
+                </p>
+                <ul>
+                    <li>Use firewalls to filter network traffic.</li>
+                    <li>Keep routers and network devices updated.</li>
+                    <li>Separate sensitive devices into secure networks.</li>
+                </ul>
+                <code>Network Security = Protection of Connected Devices</code>
+            </section>
+
+            <section id="firewalls">
+                <h3>Firewalls</h3>
+                <p>
+                    A firewall monitors incoming and outgoing network traffic.
+                    It uses security rules to allow or block connections.
+                </p>
+                <p>
+                    Firewalls can be software installed on a computer or
+                    hardware devices that protect an entire network.
+                </p>
+                <code>Allow Trusted Traffic | Block Unauthorized Traffic</code>
+            </section>
+
+            <section id="encryption">
+                <h3>Encryption</h3>
+                <p>
+                    Encryption converts readable information into ciphertext.
+                    Authorized users can decrypt the information using the
+                    appropriate key.
+                </p>
+                <p>
+                    Encryption helps protect sensitive data stored on devices
+                    and information transmitted across networks.
+                </p>
+                <code>Plaintext -> Encryption -> Ciphertext</code>
+            </section>
+
+            <section id="authentication">
+                <h3>Multi-Factor Authentication</h3>
+                <p>
+                    Multi-factor authentication, or MFA, requires users to
+                    provide more than one type of verification before
+                    accessing an account.
+                </p>
+                <ul>
+                    <li>Something you know, such as password.</li>
+                    <li>Something you have, such as a security key.</li>
+                    <li>Something you are, such as a fingerprint.</li>
+                </ul>
+                <code>Password + Security Key = Two Authentication Factors</code>
+            </section>
+
+            <section id="password-security">
+                <h3>Password Security</h3>
+                <p>
+                    Strong passwords help prevent unauthorized account access.
+                    Every important account should have a unique password.
+                </p>
+                <p>
+                    Password managers can generate and securely store
+                    strong passwords, reducing the need to memorize them.
+                </p>
+                <code>Use long, Unique Passwords + MFA</code>
+            </section>
         </main>
 
         <div data-include="components/footer.html"></div>
