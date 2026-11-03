@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Pictures</title>
+        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Everything Pictures</title>
 
         <link rel="stylesheet" href="styles/default.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
@@ -31,29 +31,181 @@
                 <h3>Demonstrating Image Manipulation with a Pexels Photograph</h3>
 
                 <p>
-                    This section will explore different image formats,
-                    resizing techniques, and proportions using a
-                    photograph from Pexels.
+                    I chose this photograph because I liked the colorful
+                    architecture and the different shapes and details
+                    in the building. The photograph was taken by Jovydas
+                    and downloaded from Pexels. It shows a colorful
+                    building with green, pink, and yellow walls against
+                    a blue sky. The original image is a JPG with
+                    dimensions of 3901 x 4815 pixels and a file
+                    size of 1.28 MB. I used this photograph to
+                    demonstrate different image formats, resizing,
+                    and how changing proportions affects image quality.
                 </p>
 
                 <article>
                     <h4>Original Image</h4>
+
+                    <p>
+                        Click the links below to view the original photograph
+                        in different image formats. Each version demonstrates
+                        how changing the format or colors affects the image.
+                    </p>
+
+                    <p class="image-links">
+                        <a href="images/colorful-architecture-3015942@jovydas_pexels.jpg"
+                            target="_blank" rel="noopener noreferrer">
+                                Original JPG
+                        </a>
+
+                        <a href="images/colorful-architecture-3015942@jovydas_pexels.gif"
+                            target="_blank" rel="noopener noreferrer">
+                                Original Image as GIF
+                        </a>
+                        
+                        <a href="images/colorful-architecture-3015942@jovydas_pexels-grayscale.jpg"
+                            target="_blank" rel="noopener noreferrer">
+                                Grayscale Image
+                        </a>
+                        
+                        <a href="images/colorful-architecture-3015942@jovydas_pexels-black-white.jpg"
+                            target="_blank" rel="noopener noreferrer">
+                                Black-and-White Image
+                        </a>
+                    </p>
                 </article>
 
                 <article>
                     <h4>Downsizing Images with CSS</h4>
+
+                    <p>
+                        This example demonstrates how CSS can make an image
+                        appear smaller without changing its original file size
+                        or dimensions. The image maintains its original
+                        proportions to prevent distortion.
+                    </p>
+
+                    <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels.jpg"
+                             alt="Colorful architecture photograph by Jovydas"
+                             style="width: 400px; max-width: 100%; height: auto;">
+
+                        <figcaption>
+                            Original 3901 x 4815 JPG image displayed at
+                            400 pixels wide using inline CSS.
+                        </figcaption>
+                    </figure>
                 </article>
 
                 <article>
                     <h4>Proper Reduction of Image with Editor</h4>
+
+                    <p>
+                        This image was resized using an image editor
+                        from 3901 x 4815 pixels to 600 x 741 pixels.
+                        Unlike CSS resizing, this reduces the actual
+                        dimensions and file size of the image while
+                        maintaining its original proportions.
+                    </p>
+
+                    <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Properly resized colorful architectural photograph"
+                             style="width: 600px; max-width: 100%; height: auto;">
+
+                        <figcaption>
+                            Image properly resized to 600 x 741 pixels
+                            using an image editor.
+                        </figcaption>
+                    </figure>
                 </article>
                 
                 <article>
                     <h4>Improper Image Proportions with CSS</h4>
+
+                    <p>
+                        These examples demonstrate how changing the width or
+                        height of an image without maintaining its original
+                        proportions can cause distortion.
+                    </p>
+                    <!-- The div and image-comparison class group related figures
+                     together so CSS can arrange them in a responsive layout. -->
+                    <div class="image-comparison">
+                        <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Architectural photograph squished vertically"
+                             style="width: 600px; height: 496px;">
+
+                             <figcaption>
+                                Height reduced to 496 pixels.
+                             </figcaption>
+                        </figure>
+
+                        <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Architectural photograph squished further vertically"
+                             style="width: 600px; height: 332px;">
+
+                             <figcaption>
+                                Height reduced to 332 pixels.
+                             </figcaption>
+                        </figure>
+                        
+                        <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Architectural photograph squished further horizontally"
+                             style="width: 402px; height: 741px;">
+
+                             <figcaption>
+                                Width reduced to 402 pixels.
+                             </figcaption>
+                        </figure>
+                        
+                        <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Architectural photograph squished further horizontally"
+                             style="width: 269px; height: 741px;">
+
+                             <figcaption>
+                                Width reduced to 269 pixels.
+                             </figcaption>
+                        </figure>                         
+                    </div>
                 </article>
                 
                 <article>
                     <h4>Improper Enlarging with CSS</h4>
+
+                    <p>
+                        These images demonstrate how enlarging a smaller
+                        image using CSS can reduce its visual quality.
+                        Both images are displayed at the same size,
+                        but the second image has fewer original pixels.
+                    </p>
+
+                    <div class="image-comparison">
+                        <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-600x741.jpg"
+                             alt="Properly resized architectural photograph"
+                             style="width: 600px; height: 741px; max-width: 100%;">
+
+                             <figcaption>
+                                Original resized image: 600 x 741 pixels.
+                                Displayed at its actual dimensions.
+                             </figcaption>
+                        </figure>
+                        
+                                                <figure>
+                        <img src="images/colorful-architecture-3015942@jovydas_pexels-150x185.jpg"
+                             alt="Small architectural photograph enlarged with CSS"
+                             style="width: 600px; height: 741px; max-width: 100%;">
+
+                             <figcaption>
+                                Reduced image: 150 x 185 pixels.
+                                Enlarged to 600 x 741 pixels using CSS.
+                             </figcaption>
+                        </figure> 
+                    </div>
                 </article>
             </section>
 
@@ -63,29 +215,183 @@
                 <h3>Demonstrating Image Manipulation with a Personal Photograph</h3>
 
                 <p>
-                    This section will use a photograph I took of a
-                    geometric object to demonstrate image quality,
-                    resizing and proper proportions.
+                    For my personal photograph, I chose a picture of myself
+                    holding a cube-shaped object next to my face. I selected
+                    this image because it demonstrates how geometric shapes
+                    can be compared to natural human features. The original
+                    photograph is a JPEG with dimensions of 1152 x 1536
+                    pixels and a file size of approximately 0.88 MB.
+                    I will use this image to demonstrate different formats,
+                    resizing techniques, and image distortion.
                 </p>
 
                 <article>
                     <h4>Original Image</h4>
+
+                    <p>
+                        Click the links below to view my personal photograph
+                        in its original format and three modified versions.
+                        Each link opens the image in a new tab.
+                    </p>
+                    <!-- The image-links class groups the image formate links
+                     so CSS can style and space them consistently. -->
+                    <p class="image-links">
+                        <a href="images/cube-next-to-face@zack-martinez.jpeg"
+                           target="_blank" rel="noopener noreferrer">
+                            Original JPEG
+                        </a>
+
+                        <a href="images/cube-next-to-face@zack-martinez.gif"
+                           target="_blank" rel="noopener noreferrer">
+                            Original Image as GIF
+                        </a>  
+                    
+                        <a href="images/cube-next-to-face@zack-martinez-grayscale.jpg"
+                           target="_blank" rel="noopener noreferrer">
+                            Grayscale Image
+                        </a>
+
+                        <a href="images/cube-next-to-face@zack-martinez-black-white.jpg"
+                           target="_blank" rel="noopener noreferrer">
+                            Black-and-White Image
+                        </a>
+                    </p>
                 </article>
 
                 <article>
                     <h4>Downsizing Images with CSS</h4>
+
+                    <p>
+                        This example demonstrates how CSS can make my
+                        personal photograph appear smaller without changing
+                        its original dimensions or file size. The image
+                        maintains its original proportions to prevent
+                        stretching or distortion.
+                    </p>
+
+                    <figure>
+                        <img src="images/cube-next-to-face@zack-martinez.jpeg"
+                             alt="Personal photograph holding a cube-shaped object next to my face"
+                             style="width: 400px; max-width: 100%; height: auto;">
+                        
+                             <figcaption>
+                                Original 1152 x 1536 JPEG photograph displayed
+                                at 400 pixels wide using inline CSS.
+                             </figcaption>
+                    </figure>
                 </article>
 
                 <article>
                     <h4>Proper Reduction of Image with Editor</h4>
+
+                    <p>
+                        I used an image editor to resize my personal
+                        photograph from 1152 x 1536 pixels to 600 x 800
+                        pixels. This reduces the actual image dimensions
+                        while maintaining the original proportions.
+                        The resized image requires less storage space
+                        than the original.
+                    </p>
+
+                    <figure>
+                        <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                             alt="Properly resized personal photograph holding a cube"
+                             style="width: 600px; max-width: 100%; height: auto;">
+
+                        <figcaption>
+                            Personal photograph properly resized to
+                            600 x 800 pixels using Photopea.
+                        </figcaption>
+                    </figure>
                 </article>
                 
                 <article>
                     <h4>Improper Image Proportions with CSS</h4>
+
+                    <p>
+                        These examples demonstrate how changing the width
+                        or height of my personal photograph without
+                        maintaining its original proportions can cause
+                        distortion. The cube-shaped object makes the
+                        changes in proportions easier to notice.
+                    </p>
+
+                    <div class="image-comparison">
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                                 alt="Personal photograph squished vertically"
+                                 style="width: 600px; height: 536px;">
+
+                            <figcaption>
+                                Height reduced by 33% to 536 pixels.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                                 alt="Personal photograph squished vertically"
+                                 style="width: 600px; height: 359px;">
+
+                            <figcaption>
+                                Height reduced by another 33% to 359 pixels.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                                 alt="Personal photograph squished horizontally"
+                                 style="width: 402px; height: 800px;">
+
+                            <figcaption>
+                                Width reduced by 33% to 402 pixels.
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                                 alt="Personal photograph squished further horizontally"
+                                 style="width: 269px; height: 800px;">
+
+                            <figcaption>
+                                Width reduced by another 33% to 269 pixels.
+                            </figcaption>
+                        </figure>
+                    </div>
                 </article>
                 
                 <article>
                     <h4>Improper Enlarging with CSS</h4>
+
+                    <p>
+                        This comparison demonstrates how enlarging a
+                        low-resolution photograph can reduce its quality.
+                        Both photographs are displayed at the same size,
+                        but the smaller image has fewer pixels and
+                        may appear blurry or pixelated.
+                    </p>
+
+                    <div class="image-comparison">
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-600x800.jpg"
+                                 alt="Personal photograph at its properly resized resolution"
+                                 style="width: 600px; height: auto; max-width: 100%;">
+
+                            <figcaption>
+                                Properly resized photograph: 600 x 800 pixels.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/cube-next-to-face@zack-martinez-150x200.jpg"
+                                 alt="Low-resolution personal photograph enlarged with CSS"
+                                 style="width: 600px; height: auto; max-width: 100%;">
+
+                            <figcaption>
+                                Reduced photograph: 150 x 200 pixels,
+                                enlarged to 600 x 800 pixels using CSS.
+                            </figcaption>
+                        </figure>
+                    </div>
                 </article>
             </section>
         </main>

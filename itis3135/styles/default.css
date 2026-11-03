@@ -304,6 +304,89 @@ main code {
     margin: 20px auto;
     border: none;
 }
+.image-comparison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.image-comparison figure {
+    margin: 10px;
+    text-align: center;
+}
+.image-comparison img {
+    max-width: 100%;
+}
+.image-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.image-links a {
+    padding: 10px 15px;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    text-decoration: none;
+}
+/* Image sizing classes demonstrate proper resizing,
+intentional distortion, and enlargement comparisons. */
+.image-css-small {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+.image-proper-pexels {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+.image-proper-personal {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+/* Intentional image distortion example. */
+.image-height-496 {
+    width: 600px;
+    height: 496px;
+}
+.image-height-332 {
+    width: 600px;
+    height: 332px;
+}
+.image-width-402 {
+    width: 402px;
+    height: 741px;
+}
+.image-width-269 {
+    width: 269px;
+    height: 741px;
+}
+.image-height-536 {
+    width: 600px;
+    height: 536px;
+}
+.image-personal-width-402 {
+    width: 402px;
+    height: 800px;
+}
+.image-personal-width-269 {
+    width: 269px;
+    height: 800px;
+}
+/* Same-size image comparisons */
+.image-enlarged-pexels {
+    width: 600px;
+    height: 741px;
+    max-width: 100%;
+}
+.image-enlarged-personal {
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+}
 /* Responsive layout for smaller screens */
 @media (max-width: 600px) {
     .pricing-container {
