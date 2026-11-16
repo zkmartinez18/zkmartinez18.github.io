@@ -387,6 +387,23 @@ intentional distortion, and enlargement comparisons. */
     height: auto;
     max-width: 100%;
 }
+/* Generated HTML, JSON, and XML output */
+#codeOutput {
+    margin-top: 25px;
+}
+#codeOutput textarea {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    min-height: 350px;
+    padding: 12px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
 /* Responsive layout for smaller screens */
 @media (max-width: 600px) {
     .pricing-container {

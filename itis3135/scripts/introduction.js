@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         updateCourseNumbers();
+        hideCode();
     });
 
     // Clear empties every field, including dynamically added courses.
@@ -94,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateCourseNumbers();
+    hideCode();
     });
 
     // Prevent HTML entered by visitors from being interpreted as code.
@@ -316,14 +318,21 @@ document.addEventListener("DOMContentLoaded", function () {
         this.hidden = true;
     });
 
-    // Display generated code on the page.
+    // Display generated code inside the textarea.
     function showCode(code, format) {
         const output = document.getElementById("codeOutput");
         const generatedCode = document.getElementById("generatedCode");
 
-        generatedCode.textContent = code;
+        generatedCode.value = code;
+
         output.querySelector("h3").textContent = `Generated ${format}`;
         output.hidden = false;
+    }
+
+    // Hide previously generated code.
+    function hideCode() {
+        document.getElementById("codeOutput").hidden = true;
+        document.getElementById("generatedCode").value = "";
     }
 
     // Generate JSON from the form information.
@@ -407,10 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return `<a href="${escapeHTML(link.url)}">${escapeHTML(link.label)}</a>`;
         }).join(" | ");
 
-        const uploadedImage = document.getElementById("img").files[0];
-        const imageSource = uploadedImage
-            ? URL.createObjectURL(uploadedImage)
-            : "images/zack-introduction.jpg";
+        const imageSource = `images/${data.img}`;
 
         const html = `
     <section class="introduction">
