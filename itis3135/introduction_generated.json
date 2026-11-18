@@ -1,14 +1,14 @@
 {
     "firstName": "Zackery",
     "middleName": "",
-    "nickName": "Zack",
+    "nickname": "Zack",
     "lastName": "Martinez",
     "acknowledgment": "I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.",
     "acknowledgmentDate": "11/17/2026",
     "prettyNameDivider": "|",
     "adjectives": "Zany",
     "animal": "Mongoose",
-    "img": "zack-introduction.jpg",
+    "img": "images/zack-introduction.jpg",
     "pictureAlt": "Zackery Martinez",
     "caption": "Chopped Liver",
     "personalInfo": {
