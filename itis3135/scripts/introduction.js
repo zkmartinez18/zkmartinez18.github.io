@@ -57,6 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
     const clearButton = document.getElementById("clearButton");
 
+    // Hide previously generated code.
+    function hideCode() {
+        document.getElementById("codeOutput").hidden = true;
+        document.getElementById("generatedCode").value = "";
+    }
+
     // Save the original five courses for Reset.
     const originalCourses = coursesContainer.innerHTML;
 
@@ -327,12 +333,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         output.querySelector("h3").textContent = `Generated ${format}`;
         output.hidden = false;
-    }
-
-    // Hide previously generated code.
-    function hideCode() {
-        document.getElementById("codeOutput").hidden = true;
-        document.getElementById("generatedCode").value = "";
     }
 
     // Generate JSON from the form information.

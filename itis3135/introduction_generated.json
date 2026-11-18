@@ -1,0 +1,85 @@
+{
+    "firstName": "Zackery",
+    "middleName": "",
+    "nickName": "Zack",
+    "lastName": "Martinez",
+    "acknowledgment": "I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.",
+    "acknowledgmentDate": "11/17/2026",
+    "prettyNameDivider": "|",
+    "adjectives": "Zany",
+    "animal": "Mongoose",
+    "img": "zack-introduction.jpg",
+    "pictureAlt": "Zackery Martinez",
+    "caption": "Chopped Liver",
+    "personalInfo": {
+        "statement": "My name is Zack, and this is my third semester at UNC Charlotte. I am a Computer Science major with a concentration in Cybersecurity. It's exciting to learn more about IT in general and I want to improve my skills for my career, and I look forward to learning about front-end development.",
+        "personalBackground": "Born in Riverside California, moved to N.C in 2015.",
+        "professionalBackground": "I did some mechanic work and buried cable for spectrum.",
+        "academicBackground": "Associate in Science 2025. Computer Science 2027.",
+        "primaryWorkComputer": "HP Pavilion Laptop, Windows 11 24H2.",
+        "primaryWorkLocation": "My home.",
+        "alternateComputerLocation": "My PC desktop, library."
+    },
+    "courses": [
+        {
+            "department": "ITSC",
+            "courseNumber": "3155",
+            "courseTitle": "Software Engineering",
+            "reasonForTaking": "Requirement and I want to know the process of making software from conceptual point of view."
+        },
+        {
+            "department": "ITIS",
+            "courseNumber": "3135",
+            "courseTitle": "Front-End Web App Development",
+            "reasonForTaking": "Requirement and it will be a new set of skills that I can learn."
+        },
+        {
+            "department": "ITSC",
+            "courseNumber": "3146",
+            "courseTitle": "Intro Systems & Networking",
+            "reasonForTaking": "Requirement, but it has many connections to cybersecurity so this class to me is a priority to learn and master what I learn."
+        },
+        {
+            "department": "ITSC",
+            "courseNumber": "3160",
+            "courseTitle": "Database Design & Implementation",
+            "reasonForTaking": "An important class I want to learn because databases are important and I want to know how they are made and used."
+        },
+        {
+            "department": "ITIS",
+            "courseNumber": "3200",
+            "courseTitle": "Intro to Info Security & Privacy",
+            "reasonForTaking": "First class of my concentration so I am excited to learn about cybersecurity and everything it has to offer."
+        }
+    ],
+    "quote": "Don't, however, worry about your individual potential, Potential is only the expression of a possibility, something that can be assessed accurately only in retrospect. In other words, you'll never know how good you might have become unless you try",
+    "quoteAuthor": "Mike Mentzer",
+    "funnyItem": "",
+    "somethingToShare": "",
+    "footerLinks": [
+        {
+            "label": "CLT Web",
+            "url": "https://webpages.charlotte.edu/zmarti18/"
+        },
+        {
+            "label": "GitHub.io",
+            "url": "https://zkmartinez18.github.io/"
+        },
+        {
+            "label": "GitHub",
+            "url": "https://github.com/zkmartinez18/"
+        },
+        {
+            "label": "freeCodeCamp",
+            "url": "https://www.freecodecamp.org/zkmartinez18"
+        },
+        {
+            "label": "Codecademy",
+            "url": "https://www.codecademy.com/profiles/zkmartinez18"
+        },
+        {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/zackery-martinez-18315238b/"
+        }
+    ]
+}
