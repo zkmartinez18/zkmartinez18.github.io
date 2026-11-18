@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return {
             firstName: getValue("firstName"),
             middleName: getValue("middleName"),
-            nickName: getValue("nickName"),
+            nickname: getValue("nickName"),
             lastName: getValue("lastName"),
             acknowledgment: getValue("acknowledgment"),
             acknowledgmentDate: getValue("acknowledgmentDate"),
@@ -147,8 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
             adjectives: getValue("adjectives"),
             animal: getValue("animal"),
             img: document.getElementById("img").files.length > 0
-                ? document.getElementById("img").files[0].name
-                : "zack-introduction.jpg",
+                ? "images/" + document.getElementById("img").files[0].name
+                : "images/zack-introduction.jpg",
             pictureAlt: getValue("pictureAlt"),
             caption: getValue("caption"),
             personalInfo: {
@@ -398,8 +398,8 @@ document.addEventListener("DOMContentLoaded", function () {
             data.lastName
         ].filter(Boolean).join(" ");
 
-        const displayName = data.nickName
-            ? `${data.firstName} "${data.nickName}" ${data.lastName}`
+        const displayName = data.nickname
+            ? `${data.firstName} "${data.nickname}" ${data.lastName}`
             : fullName;
 
         const courseHTML = data.courses.map(function (course) {
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return `<a href="${escapeHTML(link.url)}">${escapeHTML(link.label)}</a>`;
         }).join(" | ");
 
-        const imageSource = `images/${data.img}`;
+        const imageSource = data.img;
 
         const html = `
     <section class="introduction">
