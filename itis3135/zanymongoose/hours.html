@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zany Mongoose House of Banners | Workshop Hours</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <!-- Accumulus Validator -->
+         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div data-include="components/header.html"></div>
+
+        <!-- The hours-page class centers the content on the Hours page. -->
+        <main class="hours-page">
+            <h2 class="hours-heading">Workshop Hours</h2>
+
+            <p id="workshop-status" aria-live="polite">
+                Checking workshop hours...
+            </p>
+
+            <h3>When the Workshop Is Open</h3>
+
+            <p>
+                The artisans of Zany Mongoose House of Banners
+                welcome visitors throughout the week. Whether
+                you are choosing a new house banner or discussing
+                a custom family crest, our workshop is ready
+                to help bring your ideas to life.
+            </p>
+
+            <!-- The business-hours class styles the schedule as a parchment notice board. -->
+            <section class="business-hours">
+                <h3 class="card-heading hours-card-heading">Workshop Schedule</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 AM - 3:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <h3>Commissioning Your Banner</h3>
+
+            <p>
+                Visitors may request custom banners, family
+                crests, and decorative shields during regular
+                workshop hours. We recommend contacting our
+                artisans in advance to discuss colors, symbols,
+                and special designs for your house.
+            </p>
+
+            <figure>
+                <img src="images/workshop-hours.jpg"
+                     alt="Medieval workshop with wooden tables and hanging banners">
+
+                <figcaption>
+                    Our workshop welcomes every noble house.
+                </figcaption>
+            </figure>
+
+        </main>
+
+        <div data-include="components/footer.html"></div>
+
+        <script src="scripts/workshop-status.js" defer></script>
+        <script src="../scripts/HTMLInclude.min.js"></script>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    </body>
+</html>

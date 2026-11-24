@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zany Mongoose House of Banners | Send a Raven</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <!-- Accumulus Validator -->
+         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div data-include="components/header.html"></div>
+
+        <main class="contact-page">
+            <h2 class="contact-heading">Send a Raven</h2>
+
+            <h3 class="contact-subheading">Messages From Across the Kingdom</h3>
+
+            <p>
+                Have questions about our house banners, family
+                crests, or decorative shields? The artisans of
+                Zany Mongoose House of Banners welcome messages
+                from travelers and noble houses alike.
+            </p>
+
+            <p>
+                Whether you wish to commission a custom banner
+                or learn more about our designs, send a raven
+                to our workshop. We look forward to helping
+                you create a symbol worthy of your house.
+            </p>
+
+           <!-- Div arranges the raven illustration beside the contact information. -->
+            <div class="contact-layout">
+
+                <figure>
+                    <img src="images/contact-raven.jpg"
+                         alt="Black medieval raven carrying a sealed parchment letter">
+                    <figcaption>
+                        A raven carries your message across the kingdom.
+                    </figcaption>
+                </figure>
+
+                <!-- The contact-info class displays the workshop's contact details. -->
+                 <section class="contact-info">
+                    <h3 class="card-heading contact-card-heading">Reach Our Workshop</h3>
+
+                    <p>
+                        <strong>Raven Post:</strong><br>
+                        contact@zanymongoose.example
+                    </p>
+                    <p>
+                        <strong>Workshop Location:</strong><br>
+                        Charlotte, North Carolina
+                    </p>
+                    <p>
+                        <strong>Available:</strong><br>
+                        Monday through Saturday
+                    </p>
+                    <p>
+                        Whether you have a design in mind or
+                        need help choosing a symbol for your
+                        house, our artisans are ready to assist.
+                    </p>                 
+                 </section>
+            </div>
+
+            <!-- Interactive calculator for custom banner orders. -->
+             <section class="commission-calculator">
+                <h3>Estimate Your Commission</h3>
+
+                <p>
+                    Choose a handcrafted item and enter the quantity
+                    to estimate the cost of your commission.
+                </p>
+
+                <label for="banner-type">Choose an Item:</label>
+                <select id="banner-type">
+                    <option value="45">House Banner - $45</option>
+                    <option value="35">Family Crest - $35</option>
+                    <option value="60">Decorative Shield - $60</option>
+                </select>
+
+                <label for="banner-quantity">Quantity:</label>
+                <input type="number" id="banner-quantity"
+                       min="1" max="20" value="1">
+
+                <button type="button" id="calculate-price">
+                    Calculate Price
+                </button>
+
+                <p id="price-result" aria-live="polite">
+                    Select an item and calculate your estimated price.
+                </p>
+             </section>
+
+        </main>
+        <div data-include="components/footer.html"></div>
+
+        <script src="scripts/banner-calculator.js" defer></script>
+        <script src="../scripts/HTMLInclude.min.js"></script>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    </body>
+</html>

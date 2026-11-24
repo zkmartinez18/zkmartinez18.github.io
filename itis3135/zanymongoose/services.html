@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zany Mongoose House of Banners | Banners and Crests</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <!-- Accumulus Validator -->
+         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div data-include="components/header.html"></div>
+        
+        <!-- The services-page class centers the content on the Services page. -->
+        <main class="services-page">
+            <h2>Banners and Crests</h2>
+
+            <p>
+                Zany Mongoose House of Banners creates medieval-inspired
+                banners, family crests, and decorative shields for
+                families and adventurers. Our designs celebrate
+                the traditions, colors, and symbols of noble houses.
+            </p>
+
+            <!-- The services-grid class arranges the three service cards in a responsive grid. -->
+            <section class="service-cards" aria-label="Banners and Crests Collection">
+                <article>
+                    <h3 class="card-heading">House Banners</h3>
+                    <p>
+                        Display your house's colors with a custom
+                        medieval banner featuring your chosen
+                        symbol and design. Each banner represents
+                        the strength and honor of your house.
+                    </p>
+                    <img src="images/house-banner.png"
+                         alt="Medieval house banner featuring a golden heraldic emblem">
+                </article>
+            
+                <article>
+                    <h3 class="card-heading">Family Crests</h3>
+                    <p>
+                        Create a unique family crest inspired by
+                        traditional heraldry. Choose meaningful
+                        symbols and bold colors to represent
+                        your family's history and identity.
+                    </p>
+                    <img src="images/family-crest.png"
+                         alt="Decorative medieval family crest with heraldic symbols">
+                </article>
+
+                <article>
+                    <h3 class="card-heading">Decorative Shields</h3>
+                    <p>
+                        Complete your medieval collection with a
+                        decorative shield featuring your house's
+                        emblem. Perfect for displaying in a great
+                        hall or at a medieval-themed celebration.
+                    </p>
+                    <img src="images/decorative-shield.png"
+                         alt="Decorative medieval shield featuring heraldic emblem">
+                </article>
+            </section>
+
+            <!-- Interactive house crest customization preview. -->
+             <section class="crest-customizer">
+                <h3>Customize Your House Crest</h3>
+
+                <p>
+                    Choose your house colors and preview how your
+                    family crest would look like with a new border.
+                </p>
+
+                <label for="crest-color">Choose Your House Color:</label>
+                <select id="crest-color">
+                    <option value="#7a0019">Crimson Red</option>
+                    <option value="#1b3a70">Royal Blue</option>
+                    <option value="#236b45">Forest Green</option>
+                    <option value="#d4af37">Antique Gold</option>
+                </select>
+
+                <figure class="crest-preview">
+                    <img id="custom-crest"
+                         src="images/family-crest.png"
+                         alt="Family crest preview with customizable border">
+                    <figcaption>
+                        Your house crest preview.
+                    </figcaption>
+                </figure>
+
+                <p id="crest-result" aria-live="polite">
+                    Selected House Color: Crimson Red
+                </p>
+             </section>
+
+        </main>
+
+        <div data-include="components/footer.html"></div>
+
+        <script src="scripts/crest-selector.js" defer></script>
+        <script src="../scripts/HTMLInclude.min.js"></script>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zackery Martinez's Zany Mongoose | ITIS3135 | Introduction Gallery</title>
+
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+
+        <!-- Accumulus Validator -->
+         <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <h2>Introduction Gallery</h2>
+
+            <!-- This div groups the introduction text and shield image
+                 so CSS can display them side by side. -->
+            <div class="gallery-intro">
+            <p>
+                Explore introductions from students in ITIS 3135.
+                This gallery retrieves information from our class API
+                and displays each student's name, mascot, picture,
+                and favorite quote.
+            </p>
+
+            <!-- The figure displays a cybersecurity-themed image for the gallery. -->
+             <figure>
+                <img src="images/cybersecurity-shield.png"
+                     alt="Cybersecurity shield representing digitial protection">
+                <figcaption>Exploring Our Classmate Introductions</figcaption>
+             </figure>
+            </div>
+
+            <!-- The section ID identifies the introduction gallery area. -->
+             <section id="introductionGallery">
+                <h3>Classmate Introductions</h3>
+
+                <!-- This ID allows JavaScript to display the number of loaded introductions. -->
+                 <p id="studentCount"></p>
+
+                <!-- The ID allows JavaScript to update the loading message. -->
+                <p id="loadingMessage">Loading introductions...</p>
+
+                <!-- This div and its ID provide a container for student cards
+                     dynamically generated from the class API using JavaScript. -->
+                <div id="galleryContainer"></div>
+             </section>
+        </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/introduction_fetch.js"></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>        
+    </body>
+</html>

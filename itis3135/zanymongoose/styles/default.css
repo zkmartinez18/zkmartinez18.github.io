@@ -1,0 +1,481 @@
+/* Zany Mongoose House of Banners Website */
+
+/* Main Page */
+body {
+    background-color: #171717;
+    color: #f7f3e8;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #7a0019;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #d4af37;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #d4af37;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #7a0019;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #7a0019;
+}
+
+/* Gold headings inside dark information cards */
+.card-heading {
+    color: #d4af37;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+
+a, a:visited {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+a:hover, a:focus-visible {
+    color: #f1c76b;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    background-color: #f7f3e8;
+    color: #29221d;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+main p {
+    font-size: 1.05rem;
+}
+
+/* Links inside light content areas */
+main a, main a:visited {
+    color: #7a0019;
+    text-decoration: underline;
+}
+
+main a:hover, main a:focus-visible {
+    color: #563c08;
+}
+
+/* Images */
+figure {
+    text-align: center;
+    margin: 25px auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #7a0019;
+    text-align: center;
+    padding: 15px;
+    border-top: 4px solid #d4af37;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+
+    nav {
+        line-height: 2;
+    }
+}
+
+/* Services Page */
+.services-page {
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-cards article {
+    background-color: #302525;
+    color: #f7f3e8;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid #d4af37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Service Card Images */
+.service-cards img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+/* Mobile Services Layout */
+@media screen and (max-width: 700px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Home Layout */
+.home-page {
+    padding: 35px;
+}
+
+.home-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 35px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.home-intro-heading {
+    color: #7a0019;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.home-intro p {
+    text-align: left;
+}
+
+.home-banner {
+    margin: 0;
+    text-align: center;
+}
+
+.home-banner img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: auto;
+    border: 3px solid #d4af37;
+    box-sizing: border-box;
+}
+
+.home-banner figcaption {
+    color: #7a0019;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+/* Mobile Homepage Layout */
+@media screen and (max-width: 700px) {
+    .home-page {
+        padding: 20px;
+    }
+
+    .home-heading {
+        font-size: 1.5rem;
+    }
+
+    .home-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-intro-heading {
+        text-align: center;
+    }
+}
+
+/* Our Story Page */
+.story-page-heading {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.story-feature {
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+.story-feature img {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    box-sizing: border-box;
+}
+
+.story-feature figcaption {
+    color: #7a0019;
+}
+
+/* Story sections sit side by side on wider screens */
+.story-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.story-sections section {
+    background-color: #efe5d2;
+    padding: 25px;
+    border-left: 4px solid #7a0019;
+    border-radius: 6px;
+}
+
+.story-heading {
+    margin-top: 0;
+}
+
+/* Mobile Story Layout */
+@media screen and (max-width: 700px) {
+    .story-sections {
+        grid-template-columns: 1fr;
+    }
+    .story-sections section {
+        padding: 18px;
+    }
+}
+
+/* Workshop Hours - Medieval Notice Board */
+.hours-page {
+    text-align: center;
+}
+.hours-heading {
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 15px;
+}
+.hours-page > p {
+    max-width: 750px;
+    margin: 20px auto;
+}
+.hours-page .business-hours {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #efe5d2;
+    color: #171717;
+    border: 3px double #7a0019;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.hours-card-heading {
+    color: #7a0019;
+}
+.hours-page .business-hours table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #171717;
+}
+.hours-page .business-hours th,
+.hours-page .business-hours td {
+    padding: 12px;
+    border-bottom: 1px solid #b9a88c;
+}
+.hours-page .business-hours th {
+    background-color: #7a0019;
+    color: #f7f3e8;
+}
+.hours-page figure {
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+.hours-page figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid #d4af37;
+    box-sizing: border-box;
+}
+
+/* Send a Raven Contact Page */
+.contact-heading {
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 15px;
+}
+.contact-subheading,
+.contact-page > p {
+    text-align: center;
+}
+.contact-page > p {
+    max-width: 750px;
+    margin: 20px auto 30px;
+}
+
+/* Places the raven beside the contact information */
+.contact-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-layout figure {
+    margin: 0;
+    text-align: center;
+}
+.contact-layout img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+}
+.contact-layout figcaption {
+    margin-top: 10px;
+    color: #7a0019;
+    font-style: italic;
+}
+
+/* Parchment-style contact panel */
+.contact-page .contact-info {
+    background-color: #efe5d2;
+    color: #171717;
+    border: 2px solid #d4af37;
+    border-left: 6px solid #7a0019;
+    border-radius: 6px;
+    padding: 25px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.contact-card-heading {
+    color: #7a0019;
+    margin-top: 0;
+}
+.contact-page .contact-info p {
+    color: #171717;
+}
+/* Mobile Contact Layout */
+@media screen and (max-width: 700px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+   /* Interactive Banner Commission Calculator */
+    .commission-calculator {
+        max-width: 600px;
+        margin: 35px auto 0;
+        padding: 25px;
+        background-color: #efe5d2;
+        border: 2px solid #d4af37;
+        border-radius: 8px;
+    }
+    .commission-calculator label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .commission-calculator select,
+    .commission-calculator input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+    .commission-calculator button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #7a0019;
+        color: #f7f3e8;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .commission-calculator button:hover {
+        background-color: #5a0013;
+    }
+    #price-result {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+/* Interactive House Crest Customizer */
+.crest-customizer {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 25px;
+    background-color: #efe5d2;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.crest-customizer label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.crest-customizer select {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+}
+.crest-preview {
+    margin: 25px auto;
+}
+.crest-preview img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
+    border: 5px solid #7a0019;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+#crest-result {
+    font-weight: bold;
+    color: #7a0019;
+}
